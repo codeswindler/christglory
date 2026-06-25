@@ -1,0 +1,38 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "Stb5Wm6spLWIbe55xmOq-"
+uri = "file://artifacts/church-website/src/assets/hero-dashboard.png"
+type = "image"
+title = "SaaS dashboard abstract"
+
+[[generated]]
+id = "ePrm68-moSKVGq9-OcFSP"
+uri = "file://artifacts/church-website/src/assets/mpesa-ui.png"
+type = "image"
+title = "Mobile M-Pesa UI"
+
+[[generated]]
+id = "p-idis2lzO5m8GceMpXKX"
+uri = "file://artifacts/church-website/src/assets/leader-app.png"
+type = "image"
+title = "Church leader app"
+
+[[generated]]
+id = "9tkxe0zXYXqeZRimGflWG"
+uri = "file://attached_assets/generated_images/clean_modern_church_financial_010d.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "WUcn8CZ4opLBHDIsTiz8w"
+uri = "file://attached_assets/generated_images/church_fund_accounting_and_edde.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "HOw07veX_nhwbDPBQaUKL"
+uri = "file://attached_assets/generated_images/mobile_phone_screen_showing_df5e.png"
+type = "image"
+title = "generated_image"
