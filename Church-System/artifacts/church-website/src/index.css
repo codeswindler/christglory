@@ -239,7 +239,7 @@
 
   .tablet-landscape-hero-section {
     min-height: 100svh;
-    padding-top: 3.65rem;
+    padding-top: 4.05rem;
     padding-bottom: 1.1rem;
   }
 
@@ -254,10 +254,11 @@
   }
 
   .tablet-landscape-hero-badge {
-    margin-bottom: 0.8rem;
+    display: none;
   }
 
   .tablet-landscape-hero-title {
+    margin-top: 0.65rem;
     margin-bottom: 1rem;
     font-size: clamp(2.5rem, 4.85vw, 2.85rem);
   }
