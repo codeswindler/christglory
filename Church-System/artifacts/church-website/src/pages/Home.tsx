@@ -258,7 +258,7 @@ function Navbar() {
           </div>
         </Link>
 
-        <div className="hidden items-center gap-5 lg:flex">
+        <div className="site-desktop-nav hidden items-center gap-5 lg:flex">
           {navItems.map(([label, href]) => (
             <a
               key={label}
@@ -276,7 +276,7 @@ function Navbar() {
         </div>
 
         <button
-          className="rounded-xl p-2.5 transition-all lg:hidden"
+          className="site-mobile-menu-button rounded-xl p-2.5 transition-all lg:hidden"
           style={{ background: "rgba(34,211,238,0.12)", color: C.c400 }}
           onClick={() => setOpen(!open)}
           aria-label={open ? "Close menu" : "Open menu"}
@@ -294,7 +294,7 @@ function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="overflow-hidden border-t bg-white lg:hidden"
+            className="site-mobile-panel overflow-hidden border-t bg-white lg:hidden"
             style={{ borderColor: C.ltbd }}
           >
             <div className="flex flex-col gap-3 px-5 py-4">
@@ -340,7 +340,7 @@ function DashboardFrame({ compact = false }: { compact?: boolean }) {
 function Hero() {
   return (
     <section
-      className="relative flex min-h-screen items-center overflow-hidden pb-12 pt-24"
+      className="tablet-landscape-hero-section relative flex min-h-screen items-center overflow-hidden pb-12 pt-24"
       style={{ background: `linear-gradient(160deg, ${C.deep} 0%, #04253d 58%, #053756 100%)` }}
     >
       <div
@@ -352,11 +352,11 @@ function Hero() {
       />
 
       <div className="relative z-10 mx-auto w-full max-w-7xl px-5">
-        <div className="flex flex-col items-center gap-12 lg:flex-row lg:gap-10">
-          <motion.div className="flex-1 text-center lg:text-left" initial="hidden" animate="visible" variants={stagger}>
+        <div className="tablet-landscape-hero-grid flex flex-col items-center gap-12 lg:flex-row lg:gap-10">
+          <motion.div className="tablet-landscape-hero-copy flex-1 text-center lg:text-left" initial="hidden" animate="visible" variants={stagger}>
             <motion.div
               variants={fadeUp}
-              className="mb-7 inline-flex items-center gap-2 rounded-full border px-4 py-2 text-xs font-bold"
+              className="tablet-landscape-hero-badge mb-7 inline-flex items-center gap-2 rounded-full border px-4 py-2 text-xs font-bold"
               style={{ background: "rgba(34,211,238,0.10)", borderColor: "rgba(34,211,238,0.30)", color: C.c400 }}
             >
               <span className="relative flex h-2 w-2">
@@ -368,7 +368,7 @@ function Hero() {
 
             <motion.h1
               variants={fadeUp}
-              className="mb-6 text-4xl font-black leading-[1.04] tracking-tight text-white sm:text-5xl lg:text-[3.55rem] xl:text-[4.05rem]"
+              className="tablet-landscape-hero-title mb-6 text-4xl font-black leading-[1.04] tracking-tight text-white sm:text-5xl lg:text-[3.55rem] xl:text-[4.05rem]"
             >
               A Church System
               <br />
@@ -397,14 +397,14 @@ function Hero() {
 
             <motion.p
               variants={fadeUp}
-              className="mx-auto mb-8 max-w-xl text-base leading-[1.75] lg:mx-0 md:text-[17px]"
+              className="tablet-landscape-hero-text mx-auto mb-8 max-w-xl text-base leading-[1.75] lg:mx-0 md:text-[17px]"
               style={{ color: "rgba(255,255,255,0.76)" }}
             >
               Help your church communicate better, account for every contribution, follow up disciples, prepare
               reports faster, and give leaders mobile visibility wherever they are.
             </motion.p>
 
-            <motion.div variants={fadeUp} className="mb-10 flex flex-col justify-center gap-3 sm:flex-row lg:justify-start">
+            <motion.div variants={fadeUp} className="tablet-landscape-hero-cta mb-10 flex flex-col justify-center gap-3 sm:flex-row lg:justify-start">
               <Button
                 asChild
                 size="lg"
@@ -419,7 +419,7 @@ function Hero() {
               </Button>
             </motion.div>
 
-            <motion.div variants={fadeUp} className="grid grid-cols-3 gap-3 text-left sm:max-w-xl">
+            <motion.div variants={fadeUp} className="tablet-landscape-hero-stats grid grid-cols-3 gap-3 text-left sm:max-w-xl">
               {[
                 ["25+", "churches ready"],
                 ["SMS", "instant updates"],
@@ -436,7 +436,7 @@ function Hero() {
           </motion.div>
 
           <motion.div
-            className="relative mx-auto w-full max-w-2xl flex-1 lg:max-w-none"
+            className="tablet-landscape-hero-media relative mx-auto w-full max-w-2xl flex-1 lg:max-w-none"
             initial={{ opacity: 0, x: 32, scale: 0.96 }}
             animate={{ opacity: 1, x: 0, scale: 1 }}
             transition={{ duration: 0.9, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}

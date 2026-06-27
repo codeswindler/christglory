@@ -226,6 +226,69 @@
   }
 }
 
+@media (min-width: 768px) and (max-width: 1279px) and (orientation: landscape) {
+  .site-desktop-nav {
+    display: flex !important;
+    gap: clamp(0.75rem, 1.6vw, 1.25rem);
+  }
+
+  .site-mobile-menu-button,
+  .site-mobile-panel {
+    display: none !important;
+  }
+
+  .tablet-landscape-hero-section {
+    min-height: 100svh;
+    padding-top: 3.65rem;
+    padding-bottom: 1.1rem;
+  }
+
+  .tablet-landscape-hero-grid {
+    flex-direction: row;
+    gap: clamp(1.5rem, 3vw, 2.5rem);
+    align-items: center;
+  }
+
+  .tablet-landscape-hero-copy {
+    text-align: left;
+  }
+
+  .tablet-landscape-hero-badge {
+    margin-bottom: 0.8rem;
+  }
+
+  .tablet-landscape-hero-title {
+    margin-bottom: 1rem;
+    font-size: clamp(2.5rem, 4.85vw, 2.85rem);
+  }
+
+  .tablet-landscape-hero-text {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 1.15rem;
+    max-width: 29rem;
+    line-height: 1.55;
+  }
+
+  .tablet-landscape-hero-cta {
+    justify-content: flex-start;
+    margin-bottom: 1.15rem;
+  }
+
+  .tablet-landscape-hero-stats {
+    max-width: 32rem;
+  }
+
+  .tablet-landscape-hero-stats > div {
+    padding-top: 0.55rem;
+    padding-bottom: 0.55rem;
+  }
+
+  .tablet-landscape-hero-media {
+    max-width: none;
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
